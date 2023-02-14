@@ -1,0 +1,81 @@
+
+
+<head>
+<style>
+
+input {
+    display: block;
+    font-size: 1.2em;
+    }
+
+body {
+    background-color: cornflowerblue;
+    }
+
+form {
+    background-color: bisque;
+    width: 32vw;
+    margin: 24vh auto;
+    padding: 26px;
+    border: black 8px solid;
+    border-radius: 16px;
+    font-size: 1.6em;
+}
+
+</style>
+
+<script>
+   function  bjfc(parm)
+   {    
+        var str
+        document.bjForm.bjName.value="JENNINGS"
+
+       str = "Name: " + document.bjForm.bjName.value  + "\r\n"
+       str = str + "Street: : " + document.bjForm.street.value  + "\r\n"
+
+        document.bjForm.bjTField.value = str
+       // return
+   }
+</script>
+
+    
+</head>
+<body>
+
+ 
+
+ 
+<!-- <form  name="bjForm" action="mailto:bjenn1776@verizon.net" > -->
+    <form  name="bjForm" action="myout.htlm" >
+
+    <label for="bjName">Name</label>
+    <input type="text" name="bjName"  value="my name" required>
+
+    <label for="eml">Email</label>
+    <input type="email" name="required"  id="eml" required>
+
+    <label for="str">Addr: Street & No.</label>
+    <input type="text"  name="street" id="str">
+
+    <labe for="city"l>Addr: City & State</label>
+    <input type="text"  name="city"  id="city" >
+
+    <label>phone</label>
+    <input type="phone" name="myPhone"  id="phn" value="(978)555-5555">
+
+    <label> Male   </label> <input type="radio" name="gender" id="male"   value="male">
+    <label> Female </label> <input type="radio" name="gender" id="female" value="female">
+   
+
+    <input type="button"  name="do bjBt" value="process" onClick="bjfc('test')"> 
+    <button  type="submit"> SUBMIT </button>
+    <button  type="reset" name="res">RESET</button>
+    <br><br><br>
+    <textArea  name="bjTField" rows="9" cols="48">  Hi  </textArea>
+
+</form>
+
+
+
+
+</body>

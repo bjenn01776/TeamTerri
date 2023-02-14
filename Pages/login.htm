@@ -1,0 +1,87 @@
+
+<html>
+
+<head>
+
+<style>
+
+body {
+    background-color:rgb(202, 173, 115);
+    width: 300px;
+    width:  70%;
+    }
+
+.header {
+    width: 35%;
+    height: 8vh;
+    background-color: crimson;
+    }
+
+.container {
+    width: 45%;
+    margin: 245px 0 0 0;
+    border: 6 solid rgb(88, 73, 76);
+    border-radius: 12px ;
+    }
+
+form {
+    background-color: rgb(197, 82, 153);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:  250px;
+    height: 280px;
+    margin: 0 0 0 164px;
+    border: 8px black solid;
+    border-radius: 12px;
+    }
+
+.inpStyle {
+    width: 65%;
+    background-color:darkgray;
+    color: white;
+    height:  6vh;
+    border:  6px  black  solid;
+    border-radius: 12px;    
+    font-size: 1.6rem;
+    font-weight: bold;
+    }
+
+.butt {
+    width: 65%;
+    background-color:rgb(105, 109, 112);
+    height:  6vh;
+    border:  6px  bold  solid;
+    border-radius: 12px;  
+    font-size: 1.5rem;
+    font-weight: bold;
+    }
+
+</style>
+
+<script>
+    function bjFc(obj)
+    {
+        obj.value="silly"
+       //alert("test " + document.getElementById("logID").value);
+    }
+</script>
+
+</head>
+<body>  
+
+ 
+
+<div class="container">
+<form>
+   
+    <input type="text"     class="inpStyle" name="logName" id="logID" size=18  placeholder="User Name" onclick="bjFc(this)">
+    <input type="password" class="inpStyle" name="pwdName" id="pwdID" size=18  placeholder="Password"  onblur="bjFc(this)">
+    <input type="button"   class="butt"     name="btEnt"   id="pwdID" size=18  value="ENTER"           onclick="bjFc(this)">
+   
+</form>
+</div>
+
+</body>
+</html>
