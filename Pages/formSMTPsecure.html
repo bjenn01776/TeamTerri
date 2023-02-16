@@ -103,24 +103,22 @@ button[type='submit']:hover {
         function sendEmail()
         {
             console.log("Begin sendEmail(): Sending msg  to epien1");
-            var form = document.getElementById("myForm");
-            console.log("in SendMsg()")
-           
-            Email.send(
-                {
-                    Host:     "smtp.elasticemail.com",
-                    Username: "ejpien1@gmail.com",
-                    Password: "56C19F282FAF17CA4072422D4B8D46F7D303",
-                    To:       "ejpien1@gmail.com",
-                    From :    "ejpien1@gmail.com",
-                    Subject:  "this a a bjenn test",
-                    Body:     "bjenn body of msg"
-                }
-                ).then ( message => alert("SendEmail(): to ejpien1 thru elactic server") ) ; 
+           // var form = document.getElementById("myForm");
+           // console.log("in SendMsg()")
+
+            Email.send({
+            SecureToken : "cf260522-2c4c-49cb-8d22-b47185dc73f2",
+            To : 'ejpien1@gmail.com',
+            From : "ejpien1@gmail.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+            }).then(
+            message => alert("SendEmail(): to ejpien1 thru elactic server")
+            );
         } 
         //Password: "56C19F282FAF17CA4072422D4B8D46F7D303",
         // API Key 3108E47C1A1E841F6D7AC07D0C8B7F00028AADCFF87F6236DE6EE2EFC3221A2F30A1D5CF8D6BC42E96DBFD6F3869E061
-        </script>
+    </script>
 
     
 </body>
